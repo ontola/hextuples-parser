@@ -1,7 +1,7 @@
 {
-  "name": "n-quads-parser",
-  "version": "2.1.0",
-  "description": "Simple, fast, n-quads and n-triples parser",
+  "name": "hextuples",
+  "version": "1.0.0",
+  "description": "Simple, fast, hextuples parser",
   "sideEffects": false,
   "scripts": {
     "build": "pika build",
@@ -12,9 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ontola/n-quads-parser.git"
+    "url": "git+ssh://git@github.com/ontola/hextuples-parser.git"
   },
   "keywords": [
+    "hextuples",
     "rdflib",
     "nquads",
     "ntriples",
@@ -23,14 +24,16 @@
     "rdfjs",
     "rdf",
     "linked",
-    "data"
+    "data",
+    "link-lib",
+    "link-redux"
   ],
   "author": "Thom van Kalkeren <thom@argu.co>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ontola/n-quads-parser/issues"
+    "url": "https://github.com/ontola/hextuples-parser/issues"
   },
-  "homepage": "https://github.com/ontola/n-quads-parser#readme",
+  "homepage": "https://github.com/ontola/hextuples-parser#readme",
   "@pika/pack": {
     "pipeline": [
       [
@@ -79,5 +82,8 @@
     "transform": {
       "\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     }
+  },
+  "peerDependencies": {
+    "can-ndjson-stream": "^1.0.2"
   }
 }
