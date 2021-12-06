@@ -29,9 +29,9 @@ export const createLineParser = (rdfFactory: DataFactory = rdf): LineParser => {
   const object = (v: string, dt: string, l: string): SomeTerm => {
     if (l) {
       return literal(v, l);
-    } else if (dt === "http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode") {
+    } else if (dt === "globalId") {
       return namedNode(v);
-    } else if (dt === "http://www.w3.org/1999/02/22-rdf-syntax-ns#blankNode") {
+    } else if (dt === "localId") {
       return blankNode(v);
     }
 
